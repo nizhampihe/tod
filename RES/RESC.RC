@@ -1,0 +1,20 @@
+#include <windows.h>
+#include "../src/hdr/resource.h"
+
+#define IDC_STATIC -1
+
+IDM_MYMENU	MENU		DISCARDABLE
+BEGIN
+	POPUP "&Game"
+	BEGIN
+		MENUITEM "Pengaturan",	IDC_STATIC
+		MENUITEM "Status",		IDC_STATIC
+		MENUITEM SEPARATOR
+		MENUITEM "Keluar",		IDC_STATIC
+	END
+	POPUP "&Help"
+	BEGIN
+		MENUITEM "Bantuan",		IDC_STATIC
+		MENUITEM "Tentang",		IDC_STATIC
+	END
+END
